@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>😂 Meme Generator</h1>
+
+    <form action="/generate" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required><br><br>
+        <input type="text" name="top_text" placeholder="Top Text"><br><br>
+        <input type="text" name="bottom_text" placeholder="Bottom Text"><br><br>
+        <button type="submit">Generate Meme</button>
+    </form>
+</body>
+</html>
